@@ -7,7 +7,7 @@ kubectl create namespace external-dns
 
 export cfApiToken=<TOKEN>
 
-helm install -n external-dns --set cfApiToken=$cfApiToken my-release -f external-dns-conf/values.yaml stable/external-dns
+helm upgrade --install -n external-dns --set cfApiToken=$cfApiToken my-release -f 01_external-dns-conf/values.yaml stable/external-dns
 ```
 
 

@@ -7,10 +7,6 @@ controller:
     minReplicas: 2
     maxreplicas: 4
 
-  service:
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: ingress.mag.yt
-
 defaultBackend:
   enabled: true
   replicaCount: 1
