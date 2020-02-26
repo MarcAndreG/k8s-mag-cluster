@@ -1,0 +1,12 @@
+provider: cloudflare
+
+cloudflare:
+  apiToken: "{{ .Values.cfApiToken }}"
+
+domainsFilters: [mag.yt]
+
+registry: txt
+txtOwnerId: cluster-mag 
+txtPrefix: clustermag
+
+replicas: 2
