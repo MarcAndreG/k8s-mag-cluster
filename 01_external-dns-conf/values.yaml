@@ -1,9 +1,12 @@
 provider: cloudflare
 
 cloudflare:
-  apiToken: "{{ .Values.cfApiToken }}"
+  # email and apitoken specified in helm args
+  proxied: false
 
 domainsFilters: [mag.yt]
+
+policy: sync
 
 registry: txt
 txtOwnerId: cluster-mag 
