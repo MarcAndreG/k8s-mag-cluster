@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-svc
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: hello.mag.yt
+spec:
+  selector:
+    app: hello-world
+  type: LoadBalancer
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 3000
