@@ -9,6 +9,9 @@ controller:
     minReplicas: 1
     maxreplicas: 6
 
+  publishService:
+    enabled: true
+
 defaultBackend:
   enabled: true
   replicaCount: 1

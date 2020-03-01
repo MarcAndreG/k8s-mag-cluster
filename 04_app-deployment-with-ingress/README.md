@@ -6,5 +6,5 @@ kubectl create namespace web-app-ingress
 ```
 
 ```
-kubectl -n web-app apply -f 04_app-deployment-with-ingress/deployment/
+kubectl -n web-app-ingress apply -f 04_app-deployment-with-ingress/deployment/
 ```
