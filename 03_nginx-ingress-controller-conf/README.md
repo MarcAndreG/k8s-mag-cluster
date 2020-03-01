@@ -6,5 +6,5 @@
 kubectl create namespace nginx-ingress
 ```
 ```
-helm upgrade --install -n nginx-ingress my-controller stable/nginx-ingress -f 02_nginx-ingress-controller-conf/values.yml
+helm upgrade --install -n nginx-ingress my-controller stable/nginx-ingress -f 03_nginx-ingress-controller-conf/values.yml
 ```

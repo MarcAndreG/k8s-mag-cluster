@@ -10,6 +10,6 @@ policy: sync
 
 registry: txt
 txtOwnerId: cluster-mag 
-txtPrefix: clustermag
+txtPrefix: clustermag_
 
 replicas: 2

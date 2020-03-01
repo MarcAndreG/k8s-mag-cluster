@@ -1,11 +1,13 @@
+ingressClass: nginx
+
 controller:
   minavailable: 1
-  replicaCount: 2
+  replicaCount: 1
 
   autoScaling:
     enabled: true
-    minReplicas: 2
-    maxreplicas: 4
+    minReplicas: 1
+    maxreplicas: 6
 
 defaultBackend:
   enabled: true

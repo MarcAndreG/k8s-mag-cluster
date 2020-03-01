@@ -5,5 +5,9 @@
 * https://kubernetes.io/fr/docs/concepts/services-networking/service/
 
 ```
-kubectl apply -f 03_app-deployment-no-ingress/deployment/
+kubectl create namespace web-app
+```
+
+```
+kubectl -n web-app apply -f 03_app-deployment-no-ingress/deployment/
 ```
